@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - MediCare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Medicare</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="medicines.html">Medicines</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="checkout-page">
+            <h1>Checkout</h1>
+            <form id="checkout-form">
+                <div class="delivery-info">
+                    <h2>Delivery Information</h2>
+                    <input type="text" id="delivery-name" placeholder="Full Name" required>
+                    <input type="text" id="delivery-address" placeholder="Address" required>
+                    <input type="text" id="delivery-city" placeholder="City" required>
+                    <input type="text" id="delivery-zip" placeholder="ZIP Code" required>
+                    <input type="tel" id="delivery-phone" placeholder="Phone Number" required>
+                </div>
+                
+                <div class="payment-info">
+                    <h2>Payment Method</h2>
+                    <label><input type="radio" name="payment" value="cod" checked> Cash on Delivery</label>
+                    <label><input type="radio" name="payment" value="card"> Credit/Debit Card</label>
+                </div>
+                
+                <div class="order-summary">
+                    <h3>Order Total: $<span id="final-total">0.00</span></h3>
+                    <button type="submit">Place Order</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
